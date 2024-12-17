@@ -1,0 +1,8 @@
+1.create source s3 source bucket
+2.create source s3 target bucket
+3.create iam role  use case aws service --glue give s3 full access ,glue service role
+4.keep csv file in s3 source bucket
+5.create database in glue
+6.create crawler data source s3 select main folder .select crawl all sub folders.give iam role,select database we created
+7.now we can query from athena
+8. in glue go to etl job then visual etl,give source as s3 bucket table name then action next select s3 target bucket, give iam role
